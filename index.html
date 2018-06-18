@@ -1,0 +1,57 @@
+<html>
+
+<head>
+
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.8.0/dist/JsBarcode.all.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+	<script src="lib/JsBarcode.all.js"></script>
+	<script src="lib/qrcode.min.js"></script>
+
+	<script src="http://cdn.date-fns.org/v1.0.0/date_fns.min.js"></script>
+
+</head>
+
+<body>
+
+	<form>
+		barcode data:
+		<br>
+		<input type="text" name="barcodeInput" id="barcodeInput">
+		<input type="button" onclick="genBarcode()" value="create barcode">
+		<input type="button" onclick="genBarcodeDom()" value="create dom barcode">
+	</form>
+	<img id="barcode" />
+	<div id="divBarcode"></div>
+	<!-- <script type="text/javascript">
+			JsBarcode("#barcode", "Hi!");
+		</script> -->
+
+	<form>
+		qrcode data:
+		<br>
+		<input type="text" name="qrcodeInput" id="qrcodeInput">
+		<input type="button" onclick="genQrcode()" value="create qrcode">
+	</form>
+
+	<div id="qrcode"></div>
+	<br>
+
+	<!-- <script type="text/javascript">
+			new QRCode(document.getElementById("qrcode"), "https://youtube.com"); -->
+	<!-- </script> -->
+
+	<!-- <form>
+		salesmancode:
+		<input type="text" name="salesman" id="salesman">
+		<input type="button" onclick="getTrip()" value="get trip">
+	</form> -->
+
+	<!-- <script>
+		alert(dateFns.isToday(new Date()));
+			//=> true
+	</script> -->
+
+</body>
+
+</html>
